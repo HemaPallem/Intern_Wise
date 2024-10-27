@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="showItems">
+      <div class="itemsHead">
+        <h3 class="title">To Do List</h3>
+        <Button id="deleteButton" onclick="deleteAll()">Delete All</Button>
+      </div>
+      <div id="todoContainer">
+        <!-- This is where the ul will be added dynamically -->
+      </div>
+    </div>
+    
+    <div class="addItems">
+      <div class="itemsHead">
+        <h3 class="title">Add New Task</h3>
+      </div>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Enter a task" id="taskInput">
+          <button id="addButton" type="button" onclick="AddItem()">
+              <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
